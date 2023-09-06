@@ -9,6 +9,7 @@
                    break;
                 }
                 $i = 0;
+                $change = 0;
             }
 
             switch ($order) {
@@ -23,7 +24,7 @@
             }
 
             if ($condition) {
-                $arrayToSort[$i] = $tmp;
+                $tmp = $arrayToSort[$i]; 
                 $arrayToSort[$i] = $arrayToSort[$i+1];
                 $arrayToSort[$i+1] = $tmp;
 
@@ -33,6 +34,4 @@
 
         return $arrayToSort;
     }
-
-    my_array_sort([2, 24, 12, 7, 34]);
 ?>

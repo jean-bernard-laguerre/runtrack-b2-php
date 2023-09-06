@@ -1,20 +1,23 @@
 <?php
     function my_fizz_buzz(int $length) : array {
 
+        $result = [];
+
         for ($i = 1; $i <= $length; $i++) {
             if(($i % 3 == 0) && ($i % 5 == 0)){
-                echo 'FizzBuzz';
+                $result[] = 'FizzBuzz';
             }
             elseif ($i % 5 == 0) {
-                echo 'Buzz';
+                $result[] = 'Buzz';
             }
             elseif ($i % 3 == 0) {
-                echo 'Fizz';
+                $result[] = 'Fizz';
             }
             else {
-                echo $i;
+                $result[] = $i;
             }
-            echo '<br>';
         }
+
+        return $result;
     }
 ?>
