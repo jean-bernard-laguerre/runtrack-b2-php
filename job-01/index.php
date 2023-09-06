@@ -1,5 +1,5 @@
 <?php
-    function my_str_search(string $needle, string $haystack) : int {
+    function my_str_search(string $haystack, string $needle) : int {
         
         $count = 0;
         
